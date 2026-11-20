@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_company_form_sweaka_driver" model="ir.ui.view">
+        <field name="name">res.company.form.sweaka.driver</field>
+        <field name="model">res.company</field>
+        <field name="inherit_id" ref="base.view_company_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="Sweaka Driver" name="sweaka_driver">
+                    <group>
+                        <field name="sweaka_debt_allowed"/>
+                        <field name="sweaka_max_discount_percent"/>
+                        <field name="sweaka_gps_required"/>
+                        <field name="sweaka_drivers_can_sign_out"/>
+                        <field name="sweaka_proof_required"/>
+                        <field name="sweaka_upload_retention_days"/>
+                    </group>
+                    <group string="Driver app: scan to connect">
+                        <field name="sweaka_server_qr" widget="image" options="{'size': [200, 200]}" readonly="1" nolabel="1" colspan="2" invisible="not sweaka_server_qr"/>
+                        <field name="sweaka_server_link" readonly="1"/>
+                        <field name="sweaka_server_link_error" readonly="1" invisible="not sweaka_server_link_error"/>
+                    </group>
+                    <group string="Sweaka licence" groups="base.group_system">
+                        <field name="sweaka_licence_tenant_key"/>
+                        <field name="sweaka_licence_secret" password="True"/>
+                        <field name="sweaka_licence_url"/>
+                        <field name="sweaka_licence_seats"/>
+                        <field name="sweaka_licence_last_sync"/>
+                        <field name="sweaka_licence_last_error"/>
+                        <button name="action_sweaka_licence_push" type="object" string="Sync drivers now"/>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
