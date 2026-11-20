@@ -1,0 +1,11 @@
+from . import driver_state  # noqa: F401
+from . import res_users  # noqa: F401
+from . import res_partner  # noqa: F401
+from . import sale_order  # noqa: F401
+from . import account_payment  # noqa: F401
+from . import account_move  # noqa: F401
+from . import driver_location  # noqa: F401
+from . import driver_docs  # noqa: F401
+from . import res_company  # noqa: F401
+from . import licence  # noqa: F401
+from . import delivery  # noqa: F401

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="cron_purge_driver_locations" model="ir.cron">
+        <field name="name">Sweaka driver: purge old GPS points</field>
+        <field name="model_id" ref="model_sweaka_driver_location"/>
+        <field name="state">code</field>
+        <field name="code">model._cron_purge()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+    </record>
+    <record id="cron_licence_push" model="ir.cron">
+        <field name="name">Sweaka driver: sync drivers to Sweaka licensing</field>
+        <field name="model_id" ref="model_sweaka_driver_licence"/>
+        <field name="state">code</field>
+        <field name="code">model._cron_push()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+    </record>
+    <record id="cron_purge_driver_uploads" model="ir.cron">
+        <field name="name">Sweaka driver: purge old delivery proofs</field>
+        <field name="model_id" ref="model_sweaka_driver_upload"/>
+        <field name="state">code</field>
+        <field name="code">model._cron_purge()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+    </record>
+</odoo>
