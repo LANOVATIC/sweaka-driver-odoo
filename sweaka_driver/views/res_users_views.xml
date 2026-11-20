@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_users_form_sweaka_driver" model="ir.ui.view">
+        <field name="name">res.users.form.sweaka.driver</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="Sweaka Driver" name="sweaka_driver">
+                    <group>
+                        <field name="sweaka_driver"/>
+                        <field name="sweaka_van_location_id" invisible="not sweaka_driver"/>
+                        <field name="sweaka_handover_code" readonly="1" invisible="not sweaka_driver"/>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

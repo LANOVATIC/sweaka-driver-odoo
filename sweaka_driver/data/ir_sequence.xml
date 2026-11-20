@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- T9.6.12a: document numbers (contract `number`, back-office lists); were "/" before -->
+<odoo noupdate="1">
+    <record id="seq_sweaka_stock_loss" model="ir.sequence">
+        <field name="name">Sweaka stock loss</field>
+        <field name="code">sweaka.stock.loss</field>
+        <field name="prefix">SL/%(year)s/</field>
+        <field name="padding">5</field>
+        <field name="company_id" eval="False"/>
+    </record>
+    <record id="seq_sweaka_cash_handover" model="ir.sequence">
+        <field name="name">Sweaka cash handover</field>
+        <field name="code">sweaka.cash.handover</field>
+        <field name="prefix">CH/%(year)s/</field>
+        <field name="padding">5</field>
+        <field name="company_id" eval="False"/>
+    </record>
+</odoo>
