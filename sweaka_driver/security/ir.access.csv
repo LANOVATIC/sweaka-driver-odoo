@@ -1,0 +1,12 @@
+id,name,model_id,group_id/id,operation,domain
+access_sweaka_driver_token_admin,sweaka.driver.token admin,sweaka.driver.token,base.group_system,crud,
+access_sweaka_driver_idem_admin,sweaka.driver.idempotency admin,sweaka.driver.idempotency,base.group_system,crud,
+access_sweaka_gps_batch_admin,sweaka.driver.gps.batch admin,sweaka.driver.gps.batch,base.group_system,crud,
+access_sweaka_driver_location_manager,sweaka.driver.location manager,sweaka.driver.location,stock.group_stock_manager,rd,
+access_sweaka_driver_location_admin,sweaka.driver.location admin,sweaka.driver.location,base.group_system,crud,
+access_sweaka_stock_loss_manager,sweaka.stock.loss manager,sweaka.stock.loss,stock.group_stock_manager,ru,
+access_sweaka_stock_loss_line_manager,sweaka.stock.loss.line manager,sweaka.stock.loss.line,stock.group_stock_manager,r,
+access_sweaka_cash_handover_manager,sweaka.cash.handover manager,sweaka.cash.handover,account.group_account_manager,ru,
+access_sweaka_day_close_manager,sweaka.day.close manager,sweaka.day.close,stock.group_stock_manager,r,
+access_sweaka_delivery_event_manager,sweaka.delivery.event manager,sweaka.delivery.event,stock.group_stock_manager,r,
+access_sweaka_driver_upload_manager,sweaka.driver.upload manager,sweaka.driver.upload,stock.group_stock_manager,rd,
